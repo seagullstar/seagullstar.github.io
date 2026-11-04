@@ -2,26 +2,59 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="OrzBoardは、MacのSafariで図形とテキストを自由に配置して、考えを整理するボードです。現在、公開準備中です。">
-<title>OrzBoard — 公開準備中</title>
-<link rel="stylesheet" href="styles.css?v=20261026-02">
+<meta name="robots" content="noindex">
+<meta name="description" content="OrzBoardは、MacのSafariで図形とテキストを自由に配置して、考えを整理するボードです。">
+<title>OrzBoard</title>
+<link rel="stylesheet" href="overview.css?v=20261104-01">
 </head>
-<body>
+<body class="board-background">
+<div class="board-decoration" aria-hidden="true">
+<span class="background-shape shape-note"></span>
+<span class="background-shape shape-circle"></span>
+<span class="background-shape shape-blue"></span>
+<span class="background-shape shape-pink"></span>
+<span class="background-shape shape-small"></span>
+</div>
 <header><a class="brand" href="index.html">OrzBoard</a></header>
-<main class="coming-soon">
-<section class="announcement" aria-labelledby="status-title">
-<h1 id="status-title">ただいま、公開準備中。</h1>
-<p>図形とテキストを自由に配置して、考えを整理するボード。<br>MacのSafariに、あなたの考える場所を。</p>
-<p>公開まで、もうしばらくお待ちください。</p>
+<main class="overview">
+<section class="hero" aria-labelledby="intro-title">
+<div class="hero-copy">
+<h1 id="intro-title">Mac の Safari が、<br>あなたの考える場所に</h1>
+<p>図形とテキストを自由に配置して、<br class="desktop-break">考えを見える化し、整理するボード<span class="platform-label">［Mac版Safari専用機能拡張］</span></p>
+<a class="store-button store-badge" href="https://apps.apple.com/jp/app/id6820879642" aria-label="Mac App Storeからダウンロード"><img src="assets/mac-app-store-jp.svg" width="168" height="48" alt="Mac App Storeからダウンロード"></a>
+</div>
+<figure class="app-screen slideshow" aria-label="OrzBoardのスクリーンショット" aria-roledescription="カルーセル">
+<button class="slide-images" type="button" aria-label="表示中のスクリーンショットを拡大" aria-haspopup="dialog">
+<img class="slide is-active" src="assets/orzboard-screenshot-001.png?v=20261028-slides" width="3104" height="1964" alt="OrzBoardの操作画面 1 / 5" aria-hidden="false" fetchpriority="high">
+<img class="slide" src="assets/orzboard-screenshot-002.png?v=20261028-slides" width="3104" height="1964" alt="OrzBoardの操作画面 2 / 5" aria-hidden="true">
+<img class="slide" src="assets/orzboard-screenshot-003.png?v=20261028-slides" width="3104" height="1964" alt="OrzBoardの操作画面 3 / 5" aria-hidden="true">
+<img class="slide" src="assets/orzboard-screenshot-004.png?v=20261028-slides" width="3104" height="1964" alt="OrzBoardの操作画面 4 / 5" aria-hidden="true">
+<img class="slide" src="assets/orzboard-screenshot-005.png?v=20261028-slides" width="3104" height="1964" alt="OrzBoardの操作画面 5 / 5" aria-hidden="true">
+</button>
+<figcaption class="slide-controls" hidden>
+<div class="slide-dots" role="group" aria-label="表示する画像を選ぶ">
+<button class="slide-dot" type="button" aria-label="画像1を表示" aria-current="true" data-slide="0"></button>
+<button class="slide-dot" type="button" aria-label="画像2を表示" aria-current="false" data-slide="1"></button>
+<button class="slide-dot" type="button" aria-label="画像3を表示" aria-current="false" data-slide="2"></button>
+<button class="slide-dot" type="button" aria-label="画像4を表示" aria-current="false" data-slide="3"></button>
+<button class="slide-dot" type="button" aria-label="画像5を表示" aria-current="false" data-slide="4"></button>
+</div>
+<button class="slide-toggle" type="button" aria-label="自動切り替えを停止">Ⅱ</button>
+</figcaption>
+</figure>
 </section>
-<section class="contact" id="contact" aria-labelledby="contact-title">
-<h2 id="contact-title">OrzBoardへのお問い合わせ</h2>
-<p>操作についてのご質問や、不具合のご連絡はこちらへ。</p>
-<p><a class="email-link" href="mailto:contact@seagullstar.com">contact@seagullstar.com</a></p>
+<section class="details" aria-label="OrzBoardでできること">
+<section><h2>思いついたことを、書く</h2><p>他のアプリを開く必要はありません。画面をダブルクリックして図形を配置したら、言葉を書き込む。考えをボードの上に並べていきます。</p></section>
+<section><h2>動かしながら、頭の中を整理する</h2><p>近いものを集めたり、離してみたり。<br>配置を変えながら、考えを見渡せます。Safariのウインドウを最大化してください。スクロールはありません。画面が1枚の紙です。</p></section>
+<section><h2>書ききれないことは、メモに</h2><p>図形にメモを添えて、<br>補足や詳しい内容も残せます。</p></section>
 </section>
 </main>
-<footer><span>© 2026 Studio Seagull</span><a href="orzboard/privacy.html">プライバシーポリシー ↗</a></footer>
+<footer class="site-footer"><span>© 2026 Studio Seagull</span><nav class="footer-links" aria-label="フッターナビゲーション"><a href="orzboard/privacy/">プライバシーポリシー</a><a id="contact" href="mailto:contact@seagullstar.com">お問い合わせ</a></nav></footer>
+<dialog class="image-lightbox" aria-label="スクリーンショットの拡大表示。左右の矢印キーで画像を切り替え、Escキーで閉じます。">
+<button class="lightbox-close" type="button" aria-label="拡大表示を閉じる" autofocus>×</button>
+<img class="lightbox-image" alt="">
+</dialog>
+<script src="slideshow.js?v=20261028-03" defer></script>
 </body>
 </html>
